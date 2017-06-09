@@ -1,0 +1,1139 @@
+{DEBUG} [2017-06-08 13:22:16,419] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-08 13:22:16,419] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-08 13:22:16,419] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-08 13:22:16,419] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-08 13:22:16,419] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-08 13:22:16,419] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-08 13:22:16,497] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-08 13:22:16,497] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-08 13:22:16,528] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-08 13:22:16,528] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-08 13:22:16,528] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-08 13:22:16,528] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-08 13:22:16,528] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-08 13:22:16,544] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-08 13:22:16,544] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-08 13:22:16,544] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-08 13:22:16,544] <loggingHandler> : [id: 0x9b154617] REGISTERED
+{DEBUG} [2017-06-08 13:22:16,544] <loggingHandler> : [id: 0x9b154617] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-08 13:22:16,544] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-08 13:22:16,544] <loggingHandler> : [id: 0x9b154617, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-08 13:39:45,369] <loggingHandler> : [id: 0x9b154617, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x9c4c6a88, /127.0.0.1:60013 => /127.0.0.1:5222]
+{DEBUG} [2017-06-08 13:39:45,369] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-08 13:39:45,369] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-08 13:39:45,417] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-08 13:39:45,417] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:45,417] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-08 13:39:45,417] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-08 13:39:45,433] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-08 13:39:45,433] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="b2fe812" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-08 13:39:45,433] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-08 13:39:45,558] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:45,558] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="ayO1E-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>223ed3844590458e86beb799a6448b83</password></query></iq>
+{DEBUG} [2017-06-08 13:39:45,573] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:39:45,573] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="ayO1E-0" to="127.0.0.1/b2fe812"/>
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="ayO1E-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="ayO1E-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="ayO1E-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>781fc6ae506abc141cf629376f74ee71867d95f0</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:39:45,589] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="ayO1E-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="ayO1E-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="ayO1E-4"></presence>
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-08 13:39:45,604] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-08 13:39:50,331] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:39:50,331] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="ayO1E-5" to="lisi" from="zhgansan"><body>zhangs</body></message>
+{DEBUG} [2017-06-08 13:39:50,331] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{DEBUG} [2017-06-08 13:48:06,877] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-08 13:48:06,877] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-08 13:48:06,893] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-08 13:48:06,893] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-08 13:48:06,971] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-08 13:48:06,971] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-08 13:48:06,971] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-08 13:48:06,971] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-08 13:48:06,986] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@320de756: display name [org.springframework.context.support.ClassPathXmlApplicationContext@320de756]; startup date [Thu Jun 08 13:48:06 CST 2017]; root of context hierarchy
+{INFO } [2017-06-08 13:48:07,017] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-08 13:48:07,158] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@320de756]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3d08db0b
+{INFO } [2017-06-08 13:48:07,158] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3d08db0b: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-08 13:48:07,173] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-08 13:48:07,173] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-08 13:48:07,189] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-08 13:48:07,189] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-08 13:48:07,236] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-08 13:48:07,251] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-08 13:48:07,298] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-08 13:48:07,298] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-08 13:48:07,376] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-08 13:48:07,392] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 6844 (auto-detected)
+{DEBUG} [2017-06-08 13:48:07,439] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0x4fe8933c6bebd255
+{DEBUG} [2017-06-08 13:48:07,454] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-08 13:48:07,485] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-08 13:48:07,548] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-08 13:48:07,548] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-08 13:48:07,563] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-08 13:48:07,563] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-08 13:48:07,563] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-08 13:48:07,563] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-08 13:48:07,563] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-08 13:48:07,595] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-08 13:48:07,595] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-08 13:48:07,595] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-08 13:48:07,595] <loggingHandler> : [id: 0x6833b13b] REGISTERED
+{DEBUG} [2017-06-08 13:48:07,595] <loggingHandler> : [id: 0x6833b13b] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-08 13:48:07,610] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-08 13:48:07,610] <loggingHandler> : [id: 0x6833b13b, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-08 13:48:21,768] <loggingHandler> : [id: 0x6833b13b, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xc0dd6b94, /127.0.0.1:60135 => /127.0.0.1:5222]
+{DEBUG} [2017-06-08 13:48:21,768] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-08 13:48:21,768] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-08 13:48:21,808] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-08 13:48:21,818] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:21,818] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-08 13:48:21,818] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-08 13:48:21,828] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-08 13:48:21,828] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="f57a68c1" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-08 13:48:21,828] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-08 13:48:21,938] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:21,938] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Qkcq8-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>ae6b4ec6d4ca484fb6bc15880fcebf9d</password></query></iq>
+{DEBUG} [2017-06-08 13:48:21,938] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:48:21,938] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Qkcq8-0" to="127.0.0.1/f57a68c1"/>
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Qkcq8-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Qkcq8-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Qkcq8-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>9280731d561fe1bd9977347b39ce4456d0dfc705</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:48:21,968] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Qkcq8-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Qkcq8-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="Qkcq8-4"></presence>
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-08 13:48:21,978] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-08 13:48:26,721] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 13:48:26,721] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="Qkcq8-5" to="lisi" from="zhgansan"><body>zhangs</body></message>
+{DEBUG} [2017-06-08 13:48:26,721] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-08 13:48:26,721] <org.androidpn.server.container.AdminConsole> : 
+<message id="Qkcq8-5" to="lisi" from="zhangsan@127.0.0.1/AndroidpnClient">
+  <body>zhangs</body>
+</message>
+{DEBUG} [2017-06-08 17:04:09,615] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-08 17:04:09,616] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-08 17:04:09,634] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-08 17:04:09,637] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-08 17:04:09,708] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-08 17:04:09,709] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-08 17:04:09,715] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-08 17:04:09,716] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-08 17:04:09,741] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6]; startup date [Thu Jun 08 17:04:09 CST 2017]; root of context hierarchy
+{INFO } [2017-06-08 17:04:09,776] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-08 17:04:09,918] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6]: org.springframework.beans.factory.support.DefaultListableBeanFactory@4a2ff5a5
+{INFO } [2017-06-08 17:04:09,928] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4a2ff5a5: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-08 17:04:09,936] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-08 17:04:09,938] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-08 17:04:09,949] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-08 17:04:09,949] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-08 17:04:09,998] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-08 17:04:10,021] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-08 17:04:10,069] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-08 17:04:10,072] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-08 17:04:10,144] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-08 17:04:10,152] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 7752 (auto-detected)
+{DEBUG} [2017-06-08 17:04:10,205] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0xb4210aa827925c42
+{DEBUG} [2017-06-08 17:04:10,211] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-08 17:04:10,230] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-08 17:04:10,230] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-08 17:04:10,230] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-08 17:04:10,231] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-08 17:04:10,231] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-08 17:04:10,231] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-08 17:04:10,231] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-08 17:04:10,232] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-08 17:04:10,232] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-08 17:04:10,232] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-08 17:04:10,297] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-08 17:04:10,297] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-08 17:04:10,323] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-08 17:04:10,323] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-08 17:04:10,323] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-08 17:04:10,323] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-08 17:04:10,323] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-08 17:04:10,344] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-08 17:04:10,344] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-08 17:04:10,344] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-08 17:04:10,352] <loggingHandler> : [id: 0xccb48efc] REGISTERED
+{DEBUG} [2017-06-08 17:04:10,353] <loggingHandler> : [id: 0xccb48efc] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-08 17:04:10,356] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-08 17:04:10,356] <loggingHandler> : [id: 0xccb48efc, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-08 17:04:27,425] <loggingHandler> : [id: 0xccb48efc, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xc3f87fde, /127.0.0.1:50475 => /127.0.0.1:5222]
+{DEBUG} [2017-06-08 17:04:27,426] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-08 17:04:27,426] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-08 17:04:27,466] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-08 17:04:27,473] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:27,473] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-08 17:04:27,474] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-08 17:04:27,482] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-08 17:04:27,482] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="658fb95e" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-08 17:04:27,486] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-08 17:04:27,604] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:27,604] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="zDj94-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>f77cddc2d3544e919a7583bac659cfd0</password></query></iq>
+{DEBUG} [2017-06-08 17:04:27,606] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:04:27,606] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:04:27,630] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="zDj94-0" to="127.0.0.1/658fb95e"/>
+{DEBUG} [2017-06-08 17:04:27,636] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:27,636] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="zDj94-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-08 17:04:27,636] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:04:27,636] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:04:27,637] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="zDj94-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-08 17:04:27,638] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:27,638] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="zDj94-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>ea920ccf343d43272a6dab4680e7ab37c7a5dbdb</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-08 17:04:27,638] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:04:27,638] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:04:27,646] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="zDj94-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="zDj94-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="zDj94-4"></presence>
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-08 17:04:27,650] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-08 17:04:32,380] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:04:32,380] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="zDj94-5" to="lisi" from="zhgansan"><body>local   zhangsan</body></message>
+{DEBUG} [2017-06-08 17:04:32,380] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-08 17:04:32,382] <org.androidpn.server.container.AdminConsole> : local:zhangsan
+{DEBUG} [2017-06-08 17:48:13,473] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-08 17:48:13,473] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-08 17:48:13,492] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-08 17:48:13,494] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-08 17:48:13,564] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-08 17:48:13,564] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-08 17:48:13,571] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-08 17:48:13,571] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-08 17:48:13,595] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@320de756: display name [org.springframework.context.support.ClassPathXmlApplicationContext@320de756]; startup date [Thu Jun 08 17:48:13 CST 2017]; root of context hierarchy
+{INFO } [2017-06-08 17:48:13,629] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-08 17:48:13,770] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@320de756]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3fcd000a
+{INFO } [2017-06-08 17:48:13,781] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fcd000a: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-08 17:48:13,789] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-08 17:48:13,791] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-08 17:48:13,802] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-08 17:48:13,802] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-08 17:48:13,852] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-08 17:48:13,874] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-08 17:48:13,923] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-08 17:48:13,927] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-08 17:48:13,993] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-08 17:48:14,002] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 3224 (auto-detected)
+{DEBUG} [2017-06-08 17:48:14,060] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0x5267010d3fd44c1e
+{DEBUG} [2017-06-08 17:48:14,067] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-08 17:48:14,084] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-08 17:48:14,084] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-08 17:48:14,084] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-08 17:48:14,085] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-08 17:48:14,086] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-08 17:48:14,086] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-08 17:48:14,086] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-08 17:48:14,086] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-08 17:48:14,086] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-08 17:48:14,086] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-08 17:48:14,152] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-08 17:48:14,152] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-08 17:48:14,176] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-08 17:48:14,176] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-08 17:48:14,176] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-08 17:48:14,176] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-08 17:48:14,176] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-08 17:48:14,194] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-08 17:48:14,194] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-08 17:48:14,195] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-08 17:48:14,202] <loggingHandler> : [id: 0x3f0c8e8a] REGISTERED
+{DEBUG} [2017-06-08 17:48:14,204] <loggingHandler> : [id: 0x3f0c8e8a] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-08 17:48:14,206] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-08 17:48:14,206] <loggingHandler> : [id: 0x3f0c8e8a, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-08 17:48:24,729] <loggingHandler> : [id: 0x3f0c8e8a, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x50ad3017, /127.0.0.1:51845 => /127.0.0.1:5222]
+{DEBUG} [2017-06-08 17:48:24,731] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-08 17:48:24,731] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-08 17:48:24,770] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-08 17:48:24,777] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:24,777] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-08 17:48:24,778] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-08 17:48:24,785] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-08 17:48:24,785] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="bc6d6ec4" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-08 17:48:24,790] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-08 17:48:24,907] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:24,907] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Jm9Jv-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>afb674064a704e96ae0489ab336f3dbe</password></query></iq>
+{DEBUG} [2017-06-08 17:48:24,909] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:48:24,909] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:48:24,933] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Jm9Jv-0" to="127.0.0.1/bc6d6ec4"/>
+{DEBUG} [2017-06-08 17:48:24,941] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:24,941] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Jm9Jv-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-08 17:48:24,942] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:48:24,942] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:48:24,942] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Jm9Jv-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-08 17:48:24,943] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:24,943] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Jm9Jv-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>294bbdae78875709f973edbb3df60afef81cee54</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-08 17:48:24,943] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:48:24,943] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:48:24,948] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Jm9Jv-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-08 17:48:24,951] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:24,951] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Jm9Jv-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-08 17:48:24,952] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:48:24,952] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:48:24,952] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:24,952] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="Jm9Jv-4"></presence>
+{DEBUG} [2017-06-08 17:48:24,952] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-08 17:48:24,952] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-08 17:48:29,687] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:48:29,687] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="Jm9Jv-5" to="lisi" from="zhgansan"><body>local   zhangsan</body></message>
+{DEBUG} [2017-06-08 17:48:29,687] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-08 17:48:29,689] <org.androidpn.server.container.AdminConsole> : local:zhangsan
+{DEBUG} [2017-06-08 17:49:44,599] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-08 17:49:44,599] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-08 17:49:44,617] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-08 17:49:44,620] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-08 17:49:44,690] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-08 17:49:44,690] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-08 17:49:44,697] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-08 17:49:44,697] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-08 17:49:44,722] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6]; startup date [Thu Jun 08 17:49:44 CST 2017]; root of context hierarchy
+{INFO } [2017-06-08 17:49:44,756] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-08 17:49:44,896] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1d11b33f
+{INFO } [2017-06-08 17:49:44,906] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d11b33f: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-08 17:49:44,915] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-08 17:49:44,916] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-08 17:49:44,928] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-08 17:49:44,928] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-08 17:49:44,977] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-08 17:49:45,000] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-08 17:49:45,049] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-08 17:49:45,052] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-08 17:49:45,119] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-08 17:49:45,126] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 8092 (auto-detected)
+{DEBUG} [2017-06-08 17:49:45,179] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0xc26933b549f48194
+{DEBUG} [2017-06-08 17:49:45,185] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-08 17:49:45,214] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-08 17:49:45,215] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-08 17:49:45,215] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-08 17:49:45,216] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-08 17:49:45,216] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-08 17:49:45,216] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-08 17:49:45,216] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-08 17:49:45,216] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-08 17:49:45,217] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-08 17:49:45,217] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-08 17:49:45,286] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-08 17:49:45,286] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-08 17:49:45,304] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-08 17:49:45,305] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-08 17:49:45,305] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-08 17:49:45,305] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-08 17:49:45,305] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-08 17:49:45,328] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-08 17:49:45,328] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-08 17:49:45,328] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-08 17:49:45,336] <loggingHandler> : [id: 0x8a88c874] REGISTERED
+{DEBUG} [2017-06-08 17:49:45,337] <loggingHandler> : [id: 0x8a88c874] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-08 17:49:45,340] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-08 17:49:45,340] <loggingHandler> : [id: 0x8a88c874, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-08 17:49:57,727] <loggingHandler> : [id: 0x8a88c874, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xfaf53af2, /127.0.0.1:51911 => /127.0.0.1:5222]
+{DEBUG} [2017-06-08 17:49:57,729] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-08 17:49:57,729] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-08 17:49:57,768] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-08 17:49:57,775] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:49:57,775] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-08 17:49:57,777] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-08 17:49:57,784] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-08 17:49:57,784] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="ba4c6e80" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-08 17:49:57,788] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-08 17:49:57,913] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:49:57,913] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="KQai4-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>2f762a1d80b84fa1af5a9b91bfd6bdfc</password></query></iq>
+{DEBUG} [2017-06-08 17:49:57,915] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:49:57,915] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:49:57,939] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="KQai4-0" to="127.0.0.1/ba4c6e80"/>
+{DEBUG} [2017-06-08 17:49:57,945] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:49:57,945] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="KQai4-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-08 17:49:57,945] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:49:57,945] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:49:57,945] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="KQai4-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-08 17:49:57,947] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:49:57,947] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="KQai4-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>204831bcd27f67cb5bc2ff963b68d90e5890ec97</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-08 17:49:57,947] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:49:57,947] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:49:57,954] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="KQai4-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-08 17:49:57,957] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:49:57,957] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="KQai4-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-08 17:49:57,958] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:49:57,958] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:49:57,958] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:49:57,958] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="KQai4-4"></presence>
+{DEBUG} [2017-06-08 17:49:57,958] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-08 17:49:57,958] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-08 17:50:02,683] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:50:02,683] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="KQai4-5" to="lisi" from="zhgansan"><body>local   zhangsan</body></message>
+{DEBUG} [2017-06-08 17:50:02,684] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-08 17:50:02,685] <org.androidpn.server.xmpp.router.MessageRouter> : local:zhangsan
+{ERROR} [2017-06-08 17:52:28,702] <org.androidpn.server.xmpp.codec.XmppDecoder> : xmpp 解析错误
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:745)
+{DEBUG} [2017-06-08 17:52:37,943] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-08 17:52:37,944] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-08 17:52:37,963] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-08 17:52:37,965] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-08 17:52:38,035] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-08 17:52:38,035] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-08 17:52:38,042] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-08 17:52:38,042] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-08 17:52:38,067] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6]; startup date [Thu Jun 08 17:52:38 CST 2017]; root of context hierarchy
+{INFO } [2017-06-08 17:52:38,101] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-08 17:52:38,241] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2eced8c6]: org.springframework.beans.factory.support.DefaultListableBeanFactory@48270dbf
+{INFO } [2017-06-08 17:52:38,252] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@48270dbf: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-08 17:52:38,260] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-08 17:52:38,262] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-08 17:52:38,274] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-08 17:52:38,274] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-08 17:52:38,323] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-08 17:52:38,346] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-08 17:52:38,393] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-08 17:52:38,396] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-08 17:52:38,463] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-08 17:52:38,472] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 5652 (auto-detected)
+{DEBUG} [2017-06-08 17:52:38,525] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0xf4c81f5d2438aebf
+{DEBUG} [2017-06-08 17:52:38,532] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-08 17:52:38,550] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-08 17:52:38,550] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-08 17:52:38,550] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-08 17:52:38,551] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-08 17:52:38,551] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-08 17:52:38,551] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-08 17:52:38,552] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-08 17:52:38,552] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-08 17:52:38,552] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-08 17:52:38,552] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-08 17:52:38,622] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-08 17:52:38,622] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-08 17:52:38,642] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-08 17:52:38,642] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-08 17:52:38,642] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-08 17:52:38,643] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-08 17:52:38,643] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-08 17:52:38,664] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-08 17:52:38,665] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-08 17:52:38,665] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-08 17:52:38,672] <loggingHandler> : [id: 0xbe3d8d90] REGISTERED
+{DEBUG} [2017-06-08 17:52:38,674] <loggingHandler> : [id: 0xbe3d8d90] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-08 17:52:38,676] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-08 17:52:38,676] <loggingHandler> : [id: 0xbe3d8d90, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-08 17:52:48,436] <loggingHandler> : [id: 0xbe3d8d90, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xda40aaa1, /127.0.0.1:51999 => /127.0.0.1:5222]
+{DEBUG} [2017-06-08 17:52:48,437] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-08 17:52:48,438] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-08 17:52:48,475] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-08 17:52:48,483] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:48,483] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-08 17:52:48,484] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-08 17:52:48,491] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-08 17:52:48,492] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="84eea771" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-08 17:52:48,496] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-08 17:52:48,623] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:48,623] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="9R908-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>05a92c4884a546d9ad1cecc0ac6cac4b</password></query></iq>
+{DEBUG} [2017-06-08 17:52:48,625] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:52:48,625] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:52:48,649] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="9R908-0" to="127.0.0.1/84eea771"/>
+{DEBUG} [2017-06-08 17:52:48,655] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:48,655] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="9R908-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-08 17:52:48,655] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:52:48,655] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:52:48,656] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="9R908-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-08 17:52:48,657] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:48,657] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="9R908-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>ccc074d8d5938a2d70742313cdb9f3638012c122</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-08 17:52:48,657] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:52:48,657] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:52:48,662] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="9R908-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-08 17:52:48,666] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="9R908-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="9R908-4"></presence>
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-08 17:52:48,667] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-08 17:52:53,392] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-08 17:52:53,392] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="9R908-5" to="lisi" from="zhgansan"><body>local   zhangsan</body></message>
+{DEBUG} [2017-06-08 17:52:53,393] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-08 17:52:53,394] <org.androidpn.server.xmpp.router.MessageRouter> : local:zhangsan
+{INFO } [2017-06-08 17:52:53,409] <org.biz.event.TaskManager$ProccessTask> : org.biz.event.GroupEvent@46e1e0c8
+{DEBUG} [2017-06-09 09:52:38,748] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-09 09:52:38,759] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-09 09:52:38,785] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-09 09:52:38,788] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-09 09:52:38,901] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-09 09:52:38,902] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-09 09:52:38,921] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-09 09:52:38,922] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-09 09:52:38,946] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@98320df: display name [org.springframework.context.support.ClassPathXmlApplicationContext@98320df]; startup date [Fri Jun 09 09:52:38 CST 2017]; root of context hierarchy
+{INFO } [2017-06-09 09:52:38,992] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-09 09:52:39,143] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@98320df]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7bf79b9a
+{INFO } [2017-06-09 09:52:39,154] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7bf79b9a: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-09 09:52:39,173] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-09 09:52:39,181] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-09 09:52:39,204] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-09 09:52:39,204] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-09 09:52:39,319] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-09 09:52:39,367] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-09 09:52:39,418] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-09 09:52:39,422] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-09 09:52:39,514] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-09 09:52:39,671] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 360 (auto-detected)
+{INFO } [2017-06-09 09:52:39,713] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-09 09:52:39,713] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-09 09:52:39,713] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-09 09:52:39,713] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-09 09:52:39,713] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-09 09:52:39,740] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0xd599a72864b3c8f6
+{DEBUG} [2017-06-09 09:52:39,754] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-09 09:52:39,781] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-09 09:52:39,782] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-09 09:52:39,782] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-09 09:52:39,786] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-09 09:52:39,786] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-09 09:52:39,787] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-09 09:52:39,787] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-09 09:52:39,787] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-09 09:52:39,787] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-09 09:52:39,787] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-09 09:52:39,851] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-09 09:52:39,851] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{DEBUG} [2017-06-09 09:52:39,890] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-09 09:52:39,890] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-09 09:52:39,890] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-09 09:52:39,897] <loggingHandler> : [id: 0x4ed2b3d4] REGISTERED
+{DEBUG} [2017-06-09 09:52:39,899] <loggingHandler> : [id: 0x4ed2b3d4] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-09 09:52:39,902] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-09 09:52:39,902] <loggingHandler> : [id: 0x4ed2b3d4, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-09 09:52:49,347] <loggingHandler> : [id: 0x4ed2b3d4, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x9ce7a850, /127.0.0.1:55592 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 09:52:49,349] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 09:52:49,349] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 09:52:49,416] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-09 09:52:49,433] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:49,433] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 09:52:49,434] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 09:52:49,441] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 09:52:49,441] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="33ef273c" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 09:52:49,447] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 09:52:49,632] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:49,632] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="G6Ea6-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>4fe7308ecb204bdd81859f403de851cf</password></query></iq>
+{DEBUG} [2017-06-09 09:52:49,634] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 09:52:49,634] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 09:52:49,658] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="G6Ea6-0" to="127.0.0.1/33ef273c"/>
+{DEBUG} [2017-06-09 09:52:49,665] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:49,665] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="G6Ea6-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-09 09:52:49,665] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 09:52:49,665] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 09:52:49,665] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="G6Ea6-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 09:52:49,667] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:49,667] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="G6Ea6-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>d1ec9bdeb4b751f197a967cce846486d4aaccdb6</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 09:52:49,667] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 09:52:49,667] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 09:52:49,672] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="G6Ea6-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 09:52:49,675] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:49,675] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="G6Ea6-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 09:52:49,676] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 09:52:49,676] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 09:52:49,676] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:49,676] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="G6Ea6-4"></presence>
+{DEBUG} [2017-06-09 09:52:49,676] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 09:52:49,676] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-09 09:52:54,349] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 09:52:54,349] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="G6Ea6-5" to="System" from="zhgansan"><body>local   {&quot;latitude&quot;:10,&quot;longitude&quot;:20,&quot;userName&quot;:&quot;zhangsan&quot;}</body></message>
+{DEBUG} [2017-06-09 09:52:54,349] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 09:52:54,350] <org.androidpn.server.xmpp.router.MessageRouter> : local:{"latitude":10,"longitude":20,"userName":"zhangsan"}
+{DEBUG} [2017-06-09 11:25:04,186] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-09 11:25:04,186] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-09 11:25:04,205] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-09 11:25:04,208] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-09 11:25:04,276] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-09 11:25:04,277] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-09 11:25:04,283] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-09 11:25:04,284] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-09 11:25:04,307] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@98320df: display name [org.springframework.context.support.ClassPathXmlApplicationContext@98320df]; startup date [Fri Jun 09 11:25:04 CST 2017]; root of context hierarchy
+{INFO } [2017-06-09 11:25:04,342] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-09 11:25:04,481] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@98320df]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7bf79b9a
+{INFO } [2017-06-09 11:25:04,491] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7bf79b9a: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-09 11:25:04,500] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-09 11:25:04,501] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-09 11:25:04,512] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-09 11:25:04,512] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-09 11:25:04,562] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-09 11:25:04,585] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-09 11:25:04,633] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-09 11:25:04,637] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-09 11:25:04,705] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-09 11:25:04,712] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 1844 (auto-detected)
+{DEBUG} [2017-06-09 11:25:04,767] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0x518aeab194ac2e2b
+{DEBUG} [2017-06-09 11:25:04,773] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-09 11:25:04,790] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-09 11:25:04,791] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-09 11:25:04,791] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-09 11:25:04,792] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-09 11:25:04,792] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-09 11:25:04,792] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-09 11:25:04,792] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-09 11:25:04,792] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-09 11:25:04,792] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-09 11:25:04,793] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-09 11:25:04,859] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-09 11:25:04,860] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-09 11:25:04,881] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-09 11:25:04,881] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-09 11:25:04,881] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-09 11:25:04,881] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-09 11:25:04,881] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-09 11:25:04,912] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-09 11:25:04,912] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-09 11:25:04,912] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-09 11:25:04,919] <loggingHandler> : [id: 0x87c507ed] REGISTERED
+{DEBUG} [2017-06-09 11:25:04,921] <loggingHandler> : [id: 0x87c507ed] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-09 11:25:04,923] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-09 11:25:04,924] <loggingHandler> : [id: 0x87c507ed, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-09 11:25:25,223] <loggingHandler> : [id: 0x87c507ed, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x5738598d, /127.0.0.1:57895 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:25:25,224] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:25:25,224] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:25:25,268] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-09 11:25:25,276] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:25:25,276] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:25:25,277] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:25:25,284] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:25:25,285] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="61f07465" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:25:25,289] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:25:25,399] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:25:25,399] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="4hn4i-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>f0e93fd162004237a9eb5ce957d16245</password></query></iq>
+{DEBUG} [2017-06-09 11:25:25,400] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:25:25,400] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:25:25,422] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="4hn4i-0" to="127.0.0.1/61f07465"/>
+{DEBUG} [2017-06-09 11:25:25,428] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:25:25,428] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="4hn4i-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-09 11:25:25,428] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:25:25,428] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:25:25,429] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="4hn4i-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:25:25,429] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:25:25,429] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="4hn4i-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>0c8344c542239b7b29a6bd239e264b14f3e0d11d</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:25:25,430] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:25:25,430] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:25:25,435] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="4hn4i-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:25:25,437] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="4hn4i-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="4hn4i-4"></presence>
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:25:25,438] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{ERROR} [2017-06-09 11:25:47,573] <org.androidpn.server.xmpp.codec.XmppDecoder> : xmpp 解析错误
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:745)
+{DEBUG} [2017-06-09 11:26:51,612] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-09 11:26:51,613] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-09 11:26:51,631] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-09 11:26:51,634] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-09 11:26:51,703] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-09 11:26:51,703] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-09 11:26:51,710] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-09 11:26:51,710] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-09 11:26:51,733] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@df9c72c: display name [org.springframework.context.support.ClassPathXmlApplicationContext@df9c72c]; startup date [Fri Jun 09 11:26:51 CST 2017]; root of context hierarchy
+{INFO } [2017-06-09 11:26:51,767] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-09 11:26:51,907] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@df9c72c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@4a2ff5a5
+{INFO } [2017-06-09 11:26:51,918] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4a2ff5a5: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-09 11:26:51,927] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-09 11:26:51,928] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-09 11:26:51,940] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-09 11:26:51,940] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-09 11:26:51,989] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-09 11:26:52,012] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-09 11:26:52,062] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-09 11:26:52,065] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-09 11:26:52,132] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-09 11:26:52,142] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 3124 (auto-detected)
+{DEBUG} [2017-06-09 11:26:52,190] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0x598318c45d50c2f8
+{DEBUG} [2017-06-09 11:26:52,196] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-09 11:26:52,213] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-09 11:26:52,214] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-09 11:26:52,214] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-09 11:26:52,214] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-09 11:26:52,215] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-09 11:26:52,215] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-09 11:26:52,215] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-09 11:26:52,215] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-09 11:26:52,215] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-09 11:26:52,215] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-09 11:26:52,279] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-09 11:26:52,279] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{DEBUG} [2017-06-09 11:26:52,320] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-09 11:26:52,321] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-09 11:26:52,321] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{INFO } [2017-06-09 11:26:52,321] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-09 11:26:52,321] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-09 11:26:52,321] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-09 11:26:52,321] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-09 11:26:52,321] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-09 11:26:52,329] <loggingHandler> : [id: 0x1650c8dd] REGISTERED
+{DEBUG} [2017-06-09 11:26:52,331] <loggingHandler> : [id: 0x1650c8dd] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-09 11:26:52,333] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-09 11:26:52,333] <loggingHandler> : [id: 0x1650c8dd, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-09 11:26:56,567] <loggingHandler> : [id: 0x1650c8dd, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x34b5cb3a, /127.0.0.1:57964 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:26:56,569] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:26:56,569] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:26:56,614] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-09 11:26:56,622] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:26:56,622] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:26:56,623] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:26:56,631] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:26:56,631] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="eacb289" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:26:56,636] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:26:56,742] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:26:56,742] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8u22S-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>906627a7bf384c36aa7b421d61b3de98</password></query></iq>
+{DEBUG} [2017-06-09 11:26:56,744] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:26:56,744] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:26:56,767] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="8u22S-0" to="127.0.0.1/eacb289"/>
+{DEBUG} [2017-06-09 11:26:56,773] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:26:56,773] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8u22S-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-09 11:26:56,774] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:26:56,774] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:26:56,774] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="8u22S-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:26:56,775] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:26:56,775] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8u22S-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>1141a6db8b7ba58b4be9f83e7a585011e69da163</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:26:56,775] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:26:56,775] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:26:56,781] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="8u22S-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:26:56,785] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:26:56,785] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8u22S-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:26:56,786] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:26:56,786] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:26:56,786] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:26:56,786] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="8u22S-4"></presence>
+{DEBUG} [2017-06-09 11:26:56,786] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:26:56,786] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-09 11:27:21,354] <loggingHandler> : [id: 0x1650c8dd, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xf0482842, /127.0.0.1:57977 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:27:21,354] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:27:21,354] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:27:21,358] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,358] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:27:21,358] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:27:21,358] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:27:21,358] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="af135e91" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:27:21,358] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:27:21,407] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,407] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="tkFd1-0" to="System" from="haha"><body>local   {&quot;latitude&quot;:10,&quot;longitude&quot;:20,&quot;userName&quot;:&quot;haha&quot;}</body></message>
+{DEBUG} [2017-06-09 11:27:21,407] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:27:21,408] <org.androidpn.server.xmpp.router.MessageRouter> : local:{"latitude":10,"longitude":20,"userName":"haha"}
+{INFO } [2017-06-09 11:27:21,414] <org.biz.event.GroupLocalProcessor> : Context [content={"latitude":10,"longitude":20,"userName":"haha"}, type=local   , userName=127.0.0.1]
+{DEBUG} [2017-06-09 11:27:21,467] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,467] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="tkFd1-1" type="set"><query xmlns="jabber:iq:register"><username>haha</username><password>da0b202dafe9440aa6f240e2e580ef1f</password></query></iq>
+{DEBUG} [2017-06-09 11:27:21,467] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:27:21,467] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:27:21,467] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="tkFd1-1" to="127.0.0.1/af135e91"/>
+{DEBUG} [2017-06-09 11:27:21,474] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,474] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="tkFd1-2" type="get"><query xmlns="jabber:iq:auth"><username>haha</username></query></iq>
+{DEBUG} [2017-06-09 11:27:21,474] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:27:21,475] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:27:21,475] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="tkFd1-2"><query xmlns="jabber:iq:auth"><username>haha</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:27:21,476] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,476] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="tkFd1-3" type="set"><query xmlns="jabber:iq:auth"><username>haha</username><digest>3f664a4e08a21fc90ecec7a59f6e3853263cf30a</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:27:21,476] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:27:21,476] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:27:21,476] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="tkFd1-3" to="haha@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="tkFd1-4" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="tkFd1-5"></presence>
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:27:21,479] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{ERROR} [2017-06-09 11:29:25,029] <org.androidpn.server.xmpp.codec.XmppDecoder> : xmpp 解析错误
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:745)
+{DEBUG} [2017-06-09 11:32:03,316] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-09 11:32:03,316] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-09 11:32:03,335] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-09 11:32:03,338] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-09 11:32:03,407] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-09 11:32:03,408] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-09 11:32:03,414] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-09 11:32:03,415] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-09 11:32:03,437] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7fe31559: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7fe31559]; startup date [Fri Jun 09 11:32:03 CST 2017]; root of context hierarchy
+{INFO } [2017-06-09 11:32:03,471] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-09 11:32:03,627] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@7fe31559]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1064ce7b
+{INFO } [2017-06-09 11:32:03,638] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1064ce7b: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-09 11:32:03,646] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-09 11:32:03,648] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-09 11:32:03,660] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-09 11:32:03,660] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-09 11:32:03,708] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-09 11:32:03,733] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-09 11:32:03,782] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-09 11:32:03,786] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-09 11:32:03,851] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-09 11:32:03,858] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 4708 (auto-detected)
+{DEBUG} [2017-06-09 11:32:03,910] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0xd576c1ce2aa1406c
+{DEBUG} [2017-06-09 11:32:03,917] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-09 11:32:03,934] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-09 11:32:03,934] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-09 11:32:03,934] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-09 11:32:03,935] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-09 11:32:03,935] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-09 11:32:03,935] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-09 11:32:03,935] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-09 11:32:03,935] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-09 11:32:03,936] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-09 11:32:03,936] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-09 11:32:04,002] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-09 11:32:04,002] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-09 11:32:04,043] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-09 11:32:04,043] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-09 11:32:04,043] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-09 11:32:04,043] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-09 11:32:04,043] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-09 11:32:04,046] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-09 11:32:04,046] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-09 11:32:04,047] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-09 11:32:04,054] <loggingHandler> : [id: 0x86ee1377] REGISTERED
+{DEBUG} [2017-06-09 11:32:04,056] <loggingHandler> : [id: 0x86ee1377] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-09 11:32:04,058] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-09 11:32:04,058] <loggingHandler> : [id: 0x86ee1377, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-09 11:32:08,581] <loggingHandler> : [id: 0x86ee1377, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xab39c6c9, /127.0.0.1:58114 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:32:08,582] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:32:08,582] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:32:08,626] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-09 11:32:08,634] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:32:08,634] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:32:08,635] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:32:08,642] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:32:08,642] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="812e0e02" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:32:08,647] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:32:08,756] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:32:08,756] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="eK1q8-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>9345282fc9d941bd83ecf963e67ba9d1</password></query></iq>
+{DEBUG} [2017-06-09 11:32:08,757] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:32:08,758] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:32:08,780] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="eK1q8-0" to="127.0.0.1/812e0e02"/>
+{DEBUG} [2017-06-09 11:32:08,786] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:32:08,786] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="eK1q8-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-09 11:32:08,786] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:32:08,786] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:32:08,787] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="eK1q8-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:32:08,788] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:32:08,788] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="eK1q8-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>1942128c97c26095149bd206808952a951fea6b9</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:32:08,788] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:32:08,788] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:32:08,794] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="eK1q8-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="eK1q8-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="eK1q8-4"></presence>
+{DEBUG} [2017-06-09 11:32:08,797] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:32:08,798] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{ERROR} [2017-06-09 11:32:56,333] <org.androidpn.server.xmpp.codec.XmppDecoder> : xmpp 解析错误
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:745)
+{DEBUG} [2017-06-09 11:33:03,288] <loggingHandler> : [id: 0x86ee1377, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x0455516e, /127.0.0.1:58131 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:33:03,288] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:33:03,288] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:33:03,291] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:03,291] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:33:03,292] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:33:03,292] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:33:03,292] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="bec6edcd" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:33:03,292] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:33:03,403] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:03,403] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="agBMR-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>ba643a9ba07f49518374ad590108725b</password></query></iq>
+{DEBUG} [2017-06-09 11:33:03,403] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:03,404] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:03,404] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="agBMR-0" to="127.0.0.1/bec6edcd"/>
+{DEBUG} [2017-06-09 11:33:03,408] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:03,409] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="agBMR-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-09 11:33:03,409] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:03,409] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:03,409] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="agBMR-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:33:03,410] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:03,410] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="agBMR-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>2f20296ca2972d84396cd136ff3476623a96d685</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:33:03,410] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:03,410] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:03,411] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="agBMR-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="agBMR-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="agBMR-4"></presence>
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:33:03,414] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-09 11:33:04,342] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:04,342] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="agBMR-5" to="System" from="zhangsan"><body>local   {&quot;latitude&quot;:10,&quot;longitude&quot;:20,&quot;userName&quot;:&quot;zhangsan&quot;}</body></message>
+{DEBUG} [2017-06-09 11:33:04,342] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:33:04,343] <org.androidpn.server.xmpp.router.MessageRouter> : local:{"latitude":10,"longitude":20,"userName":"zhangsan"}
+{INFO } [2017-06-09 11:33:04,344] <org.biz.event.GroupLocalProcessor> : Context [content={"latitude":10,"longitude":20,"userName":"zhangsan"}, type=local   , userName=127.0.0.1]
+{DEBUG} [2017-06-09 11:33:14,343] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:14,343] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="agBMR-6" to="System" from="zhgansan"><body>send     to haha </body></message>
+{DEBUG} [2017-06-09 11:33:14,344] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:33:14,344] <org.androidpn.server.xmpp.router.MessageRouter> : send: to haha 
+{INFO } [2017-06-09 11:33:14,345] <org.biz.event.GroupLocalProcessor> : Context [content= to haha , type=send    , userName=127.0.0.1]
+{DEBUG} [2017-06-09 11:33:39,824] <loggingHandler> : [id: 0x86ee1377, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x5978e729, /127.0.0.1:58144 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:33:39,825] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:33:39,825] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:33:39,828] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:39,828] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:33:39,828] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:33:39,828] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:33:39,828] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="bcda51cd" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:33:39,828] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:33:39,938] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:39,939] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Nn9LT-0" type="set"><query xmlns="jabber:iq:register"><username>haha</username><password>996c77cb39ac4024941c9f6c41cdd967</password></query></iq>
+{DEBUG} [2017-06-09 11:33:39,939] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:39,939] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:39,939] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Nn9LT-0" to="127.0.0.1/bcda51cd"/>
+{DEBUG} [2017-06-09 11:33:39,943] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:39,944] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Nn9LT-1" type="get"><query xmlns="jabber:iq:auth"><username>haha</username></query></iq>
+{DEBUG} [2017-06-09 11:33:39,944] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:39,944] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:39,944] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Nn9LT-1"><query xmlns="jabber:iq:auth"><username>haha</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:33:39,945] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:39,945] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Nn9LT-2" type="set"><query xmlns="jabber:iq:auth"><username>haha</username><digest>b6844e43b4a216a4c1ea46e951456d2506e472e9</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:33:39,945] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:39,945] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:39,945] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="Nn9LT-2" to="haha@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:33:39,948] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:39,948] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="Nn9LT-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:33:39,948] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:33:39,948] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:33:39,949] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:39,949] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="Nn9LT-4"></presence>
+{DEBUG} [2017-06-09 11:33:39,949] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:33:39,949] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-09 11:33:40,886] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:33:40,886] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="Nn9LT-5" to="System" from="haha"><body>local   {&quot;latitude&quot;:10,&quot;longitude&quot;:20,&quot;userName&quot;:&quot;haha&quot;}</body></message>
+{DEBUG} [2017-06-09 11:33:40,887] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:33:40,887] <org.androidpn.server.xmpp.router.MessageRouter> : local:{"latitude":10,"longitude":20,"userName":"haha"}
+{INFO } [2017-06-09 11:33:40,887] <org.biz.event.GroupLocalProcessor> : Context [content={"latitude":10,"longitude":20,"userName":"haha"}, type=local   , userName=127.0.0.1]
+{ERROR} [2017-06-09 11:34:43,596] <org.androidpn.server.xmpp.codec.XmppDecoder> : xmpp 解析错误
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:745)
+{DEBUG} [2017-06-09 11:36:02,057] <org.androidpn.server.xmpp.XmppServer> : base.dir=..
+{DEBUG} [2017-06-09 11:36:02,058] <org.androidpn.server.xmpp.XmppServer> : base.dir=D:\pn\androidpn-server\conf
+{DEBUG} [2017-06-09 11:36:02,077] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.xml
+{DEBUG} [2017-06-09 11:36:02,081] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.xml)
+{DEBUG} [2017-06-09 11:36:02,150] <org.apache.commons.configuration.ConfigurationUtils> : ConfigurationUtils.locate(): base is D:\pn\androidpn-server\server, name is config.properties
+{DEBUG} [2017-06-09 11:36:02,151] <org.apache.commons.configuration.ConfigurationUtils> : Loading configuration from the context classpath (config.properties)
+{INFO } [2017-06-09 11:36:02,157] <org.androidpn.server.util.ConfigManager> : Configuration loaded: config.xml
+{DEBUG} [2017-06-09 11:36:02,157] <org.androidpn.server.xmpp.XmppServer> : server.home.dir=D:\pn\androidpn-server
+{INFO } [2017-06-09 11:36:02,181] <org.springframework.context.support.ClassPathXmlApplicationContext> : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@98320df: display name [org.springframework.context.support.ClassPathXmlApplicationContext@98320df]; startup date [Fri Jun 09 11:36:02 CST 2017]; root of context hierarchy
+{INFO } [2017-06-09 11:36:02,216] <org.springframework.beans.factory.xml.XmlBeanDefinitionReader> : Loading XML bean definitions from class path resource [server-config.xml]
+{INFO } [2017-06-09 11:36:02,358] <org.springframework.context.support.ClassPathXmlApplicationContext> : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@98320df]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1d11b33f
+{INFO } [2017-06-09 11:36:02,368] <org.springframework.beans.factory.support.DefaultListableBeanFactory> : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d11b33f: defining beans [parentGroup,childGroup,handler,org.androidpn.server.xmpp.build.BootStrapServerBuilder#0]; root of factory hierarchy
+{DEBUG} [2017-06-09 11:36:02,377] <io.netty.util.internal.logging.InternalLoggerFactory> : Using Log4J as the default logging framework
+{DEBUG} [2017-06-09 11:36:02,379] <io.netty.channel.MultithreadEventLoopGroup> : -Dio.netty.eventLoopThreads: 8
+{DEBUG} [2017-06-09 11:36:02,390] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.noKeySetOptimization: false
+{DEBUG} [2017-06-09 11:36:02,390] <io.netty.channel.nio.NioEventLoop> : -Dio.netty.selectorAutoRebuildThreshold: 512
+{WARN } [2017-06-09 11:36:02,439] <org.springframework.beans.TypeConverterDelegate> : PropertyEditor [com.sun.beans.editors.EnumEditor] found through deprecated global PropertyEditorManager fallback - consider using a more isolated form of registration, e.g. on the BeanWrapper/BeanFactory!
+{INFO } [2017-06-09 11:36:02,463] <org.androidpn.server.xmpp.XmppServer> : Spring Configuration loaded.
+{INFO } [2017-06-09 11:36:02,512] <org.mortbay.log> : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+{INFO } [2017-06-09 11:36:02,516] <org.mortbay.log> : jetty-6.1.25
+{DEBUG} [2017-06-09 11:36:02,584] <io.netty.channel.DefaultChannelId> : -Dio.netty.machineId: 00:23:24:8e:33:fd:00:00 (auto-detected)
+{DEBUG} [2017-06-09 11:36:02,593] <io.netty.channel.DefaultChannelId> : -Dio.netty.processId: 4084 (auto-detected)
+{DEBUG} [2017-06-09 11:36:02,645] <io.netty.util.internal.ThreadLocalRandom> : -Dio.netty.initialSeedUniquifier: 0x3f5f606336034488
+{DEBUG} [2017-06-09 11:36:02,651] <io.netty.channel.ChannelOutboundBuffer> : -Dio.netty.threadLocalDirectBufferSize: 65536
+{DEBUG} [2017-06-09 11:36:02,668] <io.netty.util.internal.PlatformDependent> : Platform: Windows
+{DEBUG} [2017-06-09 11:36:02,668] <io.netty.util.internal.PlatformDependent> : Java version: 7
+{DEBUG} [2017-06-09 11:36:02,668] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noUnsafe: false
+{DEBUG} [2017-06-09 11:36:02,669] <io.netty.util.internal.PlatformDependent0> : java.nio.ByteBuffer.cleaner: available
+{DEBUG} [2017-06-09 11:36:02,669] <io.netty.util.internal.PlatformDependent0> : java.nio.Buffer.address: available
+{DEBUG} [2017-06-09 11:36:02,670] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.theUnsafe: available
+{DEBUG} [2017-06-09 11:36:02,670] <io.netty.util.internal.PlatformDependent0> : sun.misc.Unsafe.copyMemory: available
+{DEBUG} [2017-06-09 11:36:02,670] <io.netty.util.internal.PlatformDependent0> : java.nio.Bits.unaligned: true
+{DEBUG} [2017-06-09 11:36:02,670] <io.netty.util.internal.PlatformDependent> : sun.misc.Unsafe: available
+{DEBUG} [2017-06-09 11:36:02,670] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noJavassist: false
+{DEBUG} [2017-06-09 11:36:02,741] <io.netty.util.internal.PlatformDependent> : Javassist: available
+{DEBUG} [2017-06-09 11:36:02,741] <io.netty.util.internal.PlatformDependent> : -Dio.netty.noPreferDirect: false
+{INFO } [2017-06-09 11:36:02,767] <org.mortbay.log> : Started SelectChannelConnector@127.0.0.1:7070
+{DEBUG} [2017-06-09 11:36:02,767] <org.androidpn.server.container.AdminConsole> : Admin console started.
+{INFO } [2017-06-09 11:36:02,767] <org.androidpn.server.xmpp.XmppServer> : Admin console listening at http://127.0.0.1:7070
+{INFO } [2017-06-09 11:36:02,767] <org.androidpn.server.xmpp.XmppServer> : XmppServer started: 127.0.0.1
+{INFO } [2017-06-09 11:36:02,767] <org.androidpn.server.xmpp.XmppServer> : Androidpn Server v0.5.0
+{DEBUG} [2017-06-09 11:36:02,781] <io.netty.util.NetUtil> : Loopback interface: Software Loopback Interface 1
+{DEBUG} [2017-06-09 11:36:02,782] <io.netty.util.NetUtil> : Loopback address: /127.0.0.1 (primary)
+{DEBUG} [2017-06-09 11:36:02,782] <io.netty.util.NetUtil> : Loopback address: /0:0:0:0:0:0:0:1
+{DEBUG} [2017-06-09 11:36:02,789] <loggingHandler> : [id: 0x7f6f24d0] REGISTERED
+{DEBUG} [2017-06-09 11:36:02,791] <loggingHandler> : [id: 0x7f6f24d0] BIND: 0.0.0.0/0.0.0.0:5222
+{INFO } [2017-06-09 11:36:02,793] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : 启动成功
+{DEBUG} [2017-06-09 11:36:02,793] <loggingHandler> : [id: 0x7f6f24d0, /0:0:0:0:0:0:0:0:5222] ACTIVE
+{DEBUG} [2017-06-09 11:36:16,802] <loggingHandler> : [id: 0x7f6f24d0, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0xc7571604, /127.0.0.1:58227 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:36:16,803] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:36:16,804] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:36:16,847] <io.netty.util.ResourceLeakDetector> : -Dio.netty.leakDetectionLevel: simple
+{DEBUG} [2017-06-09 11:36:16,855] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:16,855] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:36:16,856] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:36:16,864] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:36:16,864] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="9aba2f74" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:36:16,870] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:36:16,988] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:16,988] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8SSRV-0" type="set"><query xmlns="jabber:iq:register"><username>zhangsan</username><password>ce9335ea57fa424ba5f7c3286b87e708</password></query></iq>
+{DEBUG} [2017-06-09 11:36:16,990] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:16,990] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:17,013] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="8SSRV-0" to="127.0.0.1/9aba2f74"/>
+{DEBUG} [2017-06-09 11:36:17,019] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:17,019] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8SSRV-1" type="get"><query xmlns="jabber:iq:auth"><username>zhangsan</username></query></iq>
+{DEBUG} [2017-06-09 11:36:17,019] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:17,019] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:17,019] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="8SSRV-1"><query xmlns="jabber:iq:auth"><username>zhangsan</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:36:17,020] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:17,020] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8SSRV-2" type="set"><query xmlns="jabber:iq:auth"><username>zhangsan</username><digest>540ce9c97819c24ffc965bffdcb1220be461ebbe</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:36:17,021] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:17,021] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:17,026] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="8SSRV-2" to="zhangsan@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:36:17,029] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:17,029] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="8SSRV-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:36:17,029] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:17,029] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:17,030] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:17,030] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="8SSRV-4"></presence>
+{DEBUG} [2017-06-09 11:36:17,030] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:36:17,030] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-09 11:36:17,867] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:17,867] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="8SSRV-5" to="System" from="zhangsan"><body>local   {&quot;latitude&quot;:10,&quot;longitude&quot;:20,&quot;userName&quot;:&quot;zhangsan&quot;}</body></message>
+{DEBUG} [2017-06-09 11:36:17,867] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:36:17,868] <org.androidpn.server.xmpp.router.MessageRouter> : local:{"latitude":10,"longitude":20,"userName":"zhangsan"}
+{INFO } [2017-06-09 11:36:17,869] <org.biz.event.GroupLocalProcessor> : Context [content={"latitude":10,"longitude":20,"userName":"zhangsan"}, type=local   , userName=127.0.0.1]
+{DEBUG} [2017-06-09 11:36:51,394] <loggingHandler> : [id: 0x7f6f24d0, /0:0:0:0:0:0:0:0:5222] RECEIVED: [id: 0x2397a4f8, /127.0.0.1:58239 => /127.0.0.1:5222]
+{DEBUG} [2017-06-09 11:36:51,395] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : sessionOpened()...
+{DEBUG} [2017-06-09 11:36:51,395] <org.androidpn.server.xmpp.build.BootStrapServerBuilder> : remoteAddress=/127.0.0.1
+{DEBUG} [2017-06-09 11:36:51,398] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:51,398] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <stream:stream to="localhost" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" version="1.0">
+{DEBUG} [2017-06-09 11:36:51,398] <org.androidpn.server.xmpp.session.ClientSession> : createSession()...
+{DEBUG} [2017-06-09 11:36:51,398] <org.androidpn.server.xmpp.session.SessionManager> : ClientSession created.
+{DEBUG} [2017-06-09 11:36:51,398] <org.androidpn.server.xmpp.net.Connection> : SENT: <?xml version='1.0' encoding='UTF-8'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="127.0.0.1" id="4d68e264" xml:lang="en" version="1.0">
+{DEBUG} [2017-06-09 11:36:51,399] <org.androidpn.server.xmpp.net.Connection> : SENT: <stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>
+{DEBUG} [2017-06-09 11:36:51,516] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:51,516] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="YAz08-0" type="set"><query xmlns="jabber:iq:register"><username>haha</username><password>5308541c1f84482d8fc70dbc4b5d3844</password></query></iq>
+{DEBUG} [2017-06-09 11:36:51,516] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:51,516] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:51,516] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="YAz08-0" to="127.0.0.1/4d68e264"/>
+{DEBUG} [2017-06-09 11:36:51,521] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:51,521] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="YAz08-1" type="get"><query xmlns="jabber:iq:auth"><username>haha</username></query></iq>
+{DEBUG} [2017-06-09 11:36:51,521] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:51,521] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:51,522] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="YAz08-1"><query xmlns="jabber:iq:auth"><username>haha</username><password/><digest/><resource/></query></iq>
+{DEBUG} [2017-06-09 11:36:51,522] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:51,522] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="YAz08-2" type="set"><query xmlns="jabber:iq:auth"><username>haha</username><digest>081c8c7c33edce2fd3f36aea1bb416fcd897f7af</digest><resource>AndroidpnClient</resource></query></iq>
+{DEBUG} [2017-06-09 11:36:51,523] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:51,523] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:51,523] <org.androidpn.server.xmpp.net.Connection> : SENT: <iq type="result" id="YAz08-2" to="haha@127.0.0.1/AndroidpnClient"/>
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <iq id="YAz08-3" type="get"><query xmlns="jabber:iq:roster"></query></iq>
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.StanzaHandler> : iq...
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.StanzaHandler> : processIQ()...
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <presence id="YAz08-4"></presence>
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.StanzaHandler> : presence...
+{DEBUG} [2017-06-09 11:36:51,526] <org.androidpn.server.xmpp.net.StanzaHandler> : processPresence()...
+{DEBUG} [2017-06-09 11:36:52,501] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:36:52,501] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="YAz08-5" to="System" from="haha"><body>local   {&quot;latitude&quot;:10,&quot;longitude&quot;:20,&quot;userName&quot;:&quot;haha&quot;}</body></message>
+{DEBUG} [2017-06-09 11:36:52,501] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:36:52,501] <org.androidpn.server.xmpp.router.MessageRouter> : local:{"latitude":10,"longitude":20,"userName":"haha"}
+{INFO } [2017-06-09 11:36:52,501] <org.biz.event.GroupLocalProcessor> : Context [content={"latitude":10,"longitude":20,"userName":"haha"}, type=local   , userName=127.0.0.1]
+{DEBUG} [2017-06-09 11:37:07,868] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : messageReceived()...
+{DEBUG} [2017-06-09 11:37:07,868] <org.androidpn.server.xmpp.net.XmppServerIoHandler> : RCVD: <message id="8SSRV-6" to="System" from="zhgansan"><body>send     to haha </body></message>
+{DEBUG} [2017-06-09 11:37:07,869] <org.androidpn.server.xmpp.net.StanzaHandler> : processMessage()...
+{INFO } [2017-06-09 11:37:07,869] <org.androidpn.server.xmpp.router.MessageRouter> : send: to haha 
+{INFO } [2017-06-09 11:37:07,870] <org.biz.event.GroupLocalProcessor> : Context [content= to haha , type=send    , userName=127.0.0.1]
+{INFO } [2017-06-09 11:37:07,871] <org.biz.event.GroupLocalProcessor> : haha
+{DEBUG} [2017-06-09 11:37:07,872] <org.androidpn.server.xmpp.net.Connection> : SENT: <message from="127.0.0.1" to="haha"><body> to haha </body></message>
