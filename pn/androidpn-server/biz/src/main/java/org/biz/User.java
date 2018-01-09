@@ -7,6 +7,10 @@ public class User {
     
     private String userName;
     
+    private String nickName;
+    
+    private String password;
+    
     //经度
     private BigDecimal longitude;
     //纬度
@@ -33,6 +37,18 @@ public class User {
     public void setLatitude(BigDecimal latitude) {
         this.latitude = latitude;
     }
+	public String getNickName() {
+		return nickName;
+	}
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
     
     
     

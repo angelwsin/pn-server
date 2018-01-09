@@ -47,16 +47,19 @@ public class DemoAppActivity {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        Message msg = new Message();
         User user = new User();
         user.setUserName("haha");
         user.setLatitude(new BigDecimal(10));
         user.setLongitude(new BigDecimal(20));
-        msg.setBody("local   "+JSON.toJSONString(user));
-        msg.setFrom("haha");
-        msg.setTo("System");
-        serviceManager.Msgservice.get().getXmppManager().getConnection().sendPacket(msg);
-        
+        //serviceManager.Msgservice.get().getXmppManager().submitRegisterTask("haha", "xxxxx");
+        serviceManager.Msgservice.get().getXmppManager().submitLoginTask("haha", "xxxxx");
+        serviceManager.Msgservice.get().getXmppManager().submitMsgTask(user, "SYSTEM");
+        try {
+			Thread.sleep(50000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         /*Thread.sleep(50000);
         Message send = new Message();
         send.setBody("send    "+" to haha ");
