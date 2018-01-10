@@ -17,6 +17,8 @@
  */
 package org.androidpn.server.util;
 
+import java.net.URL;
+
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationFactory;
 import org.apache.commons.logging.Log;
@@ -67,8 +69,9 @@ public class ConfigManager {
      */
     public void loadConfig(String configFileName) {
         try {
-            ConfigurationFactory factory = new ConfigurationFactory(
-                    configFileName);
+        	URL url = this.getClass().getClassLoader().getResource(configFileName);
+            ConfigurationFactory factory = new ConfigurationFactory();
+            factory.setConfigurationURL(url);
             config = factory.getConfiguration();
             log.info("Configuration loaded: " + configFileName);
         } catch (Exception ex) {

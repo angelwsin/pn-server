@@ -1,12 +1,12 @@
-package org.biz.user;
+package org.androidpn.server.xmpp.session;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.androidpn.server.service.UserNotFoundException;
 import org.biz.Group;
-import org.biz.User;
 
 public class GroupUserManager {
     
@@ -18,19 +18,23 @@ public class GroupUserManager {
      */
     
     private static ReentrantLock lock = new ReentrantLock();
-    private static final ConcurrentHashMap<Group, List<User>> groupUser = new ConcurrentHashMap<Group, List<User>>();
+    private static final ConcurrentHashMap<Group, Map<String,ClientSession>> groupUser = new ConcurrentHashMap<>();
     private static final ConcurrentHashMap<String, Group>  users = new ConcurrentHashMap<String, Group>();
     
     
-    public static void addGroupUser(Group group,User user){
+    public static void addGroupUser(Group group,ClientSession session){
            lock.lock();
          try {
-             List<User> users =   groupUser.get(group);
+        	 Map<String,ClientSession> users =   groupUser.get(group);
              if(users==null){
-                 users = new ArrayList<User>();
+                 users = new HashMap<>();
                  groupUser.put(group, users);
              }
-             users.add(user);
+             try {
+				users.put(session.getUsername(),session);
+			} catch (UserNotFoundException e) {
+				e.printStackTrace();
+			}
         } finally {
           lock.unlock();
         }

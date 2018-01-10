@@ -1,12 +1,19 @@
 package org.biz;
 
+import org.biz.event.Proccessor;
+
 public class Context {
     
     private Object content;
     
     private String type;
     
-    private String userName;
+    private String from;
+    
+    private String to;
+    
+    private Proccessor sendMsgProccessor;
+    
     public Object getContent() {
         return content;
     }
@@ -23,11 +30,12 @@ public class Context {
     
     
 
-    public Context(String type, String userName,Object content) {
+    public Context(String type, String from,String to ,Object content) {
         super();
         this.content = content;
         this.type = type;
-        this.userName = userName;
+        this.from = from;
+        this.to = to;
     }
 
     public String getType() {
@@ -38,18 +46,36 @@ public class Context {
         this.type = type;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+    
 
     @Override
     public String toString() {
-        return "Context [content=" + content + ", type=" + type + ", userName=" + userName + "]";
+        return "Context [content=" + content + ", type=" + type + ", from=" + from + "]";
     }
+
+	public String getFrom() {
+		return from;
+	}
+
+	public void setFrom(String from) {
+		this.from = from;
+	}
+
+	public String getTo() {
+		return to;
+	}
+
+	public void setTo(String to) {
+		this.to = to;
+	}
+
+	public Proccessor getSendMsgProccessor() {
+		return sendMsgProccessor;
+	}
+
+	public void setSendMsgProccessor(Proccessor sendMsgProccessor) {
+		this.sendMsgProccessor = sendMsgProccessor;
+	}
     
     
     

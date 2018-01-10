@@ -25,7 +25,9 @@ import org.androidpn.server.xmpp.UnauthorizedException;
 import org.androidpn.server.xmpp.auth.AuthManager;
 import org.androidpn.server.xmpp.auth.AuthToken;
 import org.androidpn.server.xmpp.session.ClientSession;
+import org.androidpn.server.xmpp.session.GroupUserManager;
 import org.androidpn.server.xmpp.session.Session;
+import org.biz.Group;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.QName;
@@ -144,6 +146,8 @@ public class IQAuthHandler extends IQHandler {
 
                 // Set the session authenticated successfully
                 session.setAuthToken(token, resource);
+                //加入
+                GroupUserManager.addGroupUser(new Group(resource), session);
                 packet.setFrom(session.getAddress());
                 reply = IQ.createResultIQ(packet);
             }

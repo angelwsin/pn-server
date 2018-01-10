@@ -22,5 +22,8 @@ public class GroupEventHandler implements EventHandler{
         Context context =  event.getContent();
         taskManager.addTask(new ProccessTask(context,processors.get(context.getType())));
     }
+    
+    
+    
 
 }

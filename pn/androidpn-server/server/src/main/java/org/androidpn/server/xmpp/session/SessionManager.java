@@ -122,7 +122,7 @@ public class SessionManager {
      */
     public ClientSession getSession(String username) {
         // return getSession(new JID(username, serverName, null, true));
-        return getSession(new JID(username, serverName, RESOURCE_NAME, true));
+        return getSession(new JID(username, serverName, null, true));
     }
 
     /**

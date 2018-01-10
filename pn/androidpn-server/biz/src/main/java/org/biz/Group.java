@@ -14,7 +14,16 @@ public class Group {
     private BigDecimal latitude;
     
     private String  userName;
-    public String getGroupName() {
+    
+    
+    public Group() {
+		super();
+	}
+	public Group(String groupName) {
+		super();
+		this.groupName = groupName;
+	}
+	public String getGroupName() {
         return groupName;
     }
     public void setGroupName(String groupName) {

@@ -5,6 +5,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.packet.Message;
+import org.xmpp.packet.Message.Type;
 
 import com.alibaba.fastjson.JSON;
 
@@ -23,6 +24,13 @@ public class MessageTask<T> implements Runnable {
         this.data = data;
         this.to   = to;
     }
+    
+    public MessageTask(XmppManager xmppManager,T data,String to,Type type) {
+        this.xmppManager = xmppManager;
+        this.data = data;
+        this.to   = to;
+    }
+
 
     public void run() {
         log.debug( "MsgTask.run()...");

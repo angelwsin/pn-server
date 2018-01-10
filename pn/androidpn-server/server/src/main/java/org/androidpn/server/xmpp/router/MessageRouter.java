@@ -17,17 +17,9 @@
  */
 package org.androidpn.server.xmpp.router;
 
-import java.lang.reflect.Constructor;
-
 import org.androidpn.server.xmpp.handler.MessageHandler;
-import org.androidpn.server.xmpp.message.MessageListenner;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.biz.Context;
-import org.biz.MessageType;
-import org.biz.event.Event;
-import org.biz.event.Notify;
-import org.xmpp.packet.JID;
 import org.xmpp.packet.Message;
 
 /** 
@@ -48,7 +40,6 @@ public class MessageRouter extends AbstractRouter<Message>{
     public MessageRouter() {
         //sessionManager = SessionManager.getInstance();
         messageHandler = new MessageHandler();
-        Notify.addListeneer(new MessageListenner());
     }
 
     /**
@@ -57,20 +48,29 @@ public class MessageRouter extends AbstractRouter<Message>{
      * @param packet the packet to route
      */
     public void route(Message packet) {
+    	
+    	messageHandler.handMessage(packet);
        // throw new RuntimeException("Please implement this!");
-        if(packet.getBody().length()>8){
-            String type =  packet.getBody().substring(0, 8);
-            String body =  packet.getBody().substring(8); 
-            JID jid = packet.getFrom();
-            log.info(String.format("%s:%s", type.trim(),body));
+    	 /*   String body =  packet.getBody(); 
+    	    JSONObject json = JSON.parseObject(body);
+    	    String type  = json.getString("type");
+    	    if(type==null)
+    	    	throw new RuntimeException("Please type this!");
+            JID from = packet.getFrom();
+            JID to  = packet.getTo();
+           // log.info(String.format("%s:%s", type.trim(),packet.getBody()));
             try {
-                Constructor<?>  constr = MessageType.getClassByType(type).getConstructor(Context.class);
-                Notify.notify((Event)constr.newInstance(new Context(type,jid.getDomain(),body)));
+                //Constructor<?>  constr = MessageType.getClassByType(type).getConstructor(Context.class);
+                //Notify.notify((Event)constr.newInstance(new Context(type,from.getDomain(),to.getDomain(),body)));
+            	Message msg = new Message();
+            	msg.setBody(body);
+            	msg.setFrom(from);
+            	msg.setTo(to);
+                SessionManager.getInstance().getSession(to.getDomain()).deliver(msg);
             } catch (Exception e) {
                 e.printStackTrace();
-            } 
+            } */
             
-        }
         
         /*JID sender = packet.getTo();
         ClientSession session = sessionManager.getSession(sender.getDomain());

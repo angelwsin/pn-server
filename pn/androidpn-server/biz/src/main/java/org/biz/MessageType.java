@@ -6,8 +6,8 @@ import org.biz.event.MessageEvent;
 
 public enum MessageType {
     
-    local("local   ",GroupEvent.class),
-    send("send    ",MessageEvent.class);
+    local("local",GroupEvent.class),
+    send("send",MessageEvent.class);
     
     
     MessageType(String type,Class<?> eventClass){

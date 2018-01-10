@@ -87,7 +87,7 @@ public class AuthManager {
             }
         }
         try {
-            if (!password.equals(getPassword(username))) {
+            if (false&&!password.equals(getPassword(username))) {
                 throw new UnauthenticatedException();
             }
         } catch (UserNotFoundException unfe) {
@@ -122,7 +122,7 @@ public class AuthManager {
             }
         }
         //todo 用户认证
-        /*try {
+        try {
             String password = getPassword(username);
             String anticipatedDigest = createDigest(token, password);
             if (!digest.equalsIgnoreCase(anticipatedDigest)) {
@@ -130,7 +130,7 @@ public class AuthManager {
             }
         } catch (UserNotFoundException unfe) {
             throw new UnauthenticatedException();
-        }*/
+        }
         return new AuthToken(username);
     }
 
@@ -149,7 +149,7 @@ public class AuthManager {
      * @return true if digest authentication is supported
      */
     public static boolean isDigestSupported() {
-        return true;
+        return false;
     }
 
     private static String createDigest(String token, String password) {

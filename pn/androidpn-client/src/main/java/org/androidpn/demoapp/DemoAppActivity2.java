@@ -28,7 +28,7 @@ import com.alibaba.fastjson.JSON;
  * 
  * @author Sehwan Noh (devnoh@gmail.com)
  */
-public class DemoAppActivity {
+public class DemoAppActivity2 {
 
     
     public static void onCreate() {
@@ -48,11 +48,11 @@ public class DemoAppActivity {
             e.printStackTrace();
         }
         User user = new User();
-        user.setUserName("haha");
+        user.setUserName("xixi");
         user.setLatitude(new BigDecimal(10));
         user.setLongitude(new BigDecimal(20));
         //serviceManager.Msgservice.get().getXmppManager().submitRegisterTask("haha", "xxxxx");
-        serviceManager.Msgservice.get().getXmppManager().submitLoginTask("haha", "xxxxx");
+        serviceManager.Msgservice.get().getXmppManager().submitLoginTask("xixi", "xxxxx");
         
         try {
 			Thread.sleep(4000);
@@ -60,7 +60,7 @@ public class DemoAppActivity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        //serviceManager.Msgservice.get().getXmppManager().submitMsgTask(user, "xixi");
+       serviceManager.Msgservice.get().getXmppManager().submitMsgTask(user, "haha");
         /*Thread.sleep(50000);
         Message send = new Message();
         send.setBody("send    "+" to haha ");

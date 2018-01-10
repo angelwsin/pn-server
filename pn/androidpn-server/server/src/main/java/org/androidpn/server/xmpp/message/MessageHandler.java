@@ -24,6 +24,7 @@ public class MessageHandler implements EventHandler{
     @Override
     public void handler(Event event) {
         Context context =  event.getContent();
+        context.setSendMsgProccessor(processors.get(MessageType.send.getType()));
         taskManager.addTask(new ProccessTask(context,processors.get(context.getType())));
     }
 
